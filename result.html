@@ -1,0 +1,209 @@
+<html>
+<head>
+    <title>t1</title>
+    <style>
+        body{
+            margin: auto;
+            background-color: rgb(248,248,251);
+            color: black;
+        }
+
+        .ReportContainer {
+            position: relative;
+            background-color: rgb(248,248,251);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .Section {
+            position: relative;
+            background-color: white;
+            margin: 10px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 1px 1px 5px 2px grey;
+        }
+
+        .SectionHeader {
+            padding: 5px 10px;
+            color: white;
+        }
+
+        .Container {
+            padding: 5px 10px 30px 10px;
+            background-color: white
+        }
+
+        .ImagesContainer {
+            position: relative;
+            display: inline;
+        }
+
+        .ImagesContainer img {
+            /* padding: 5px; */
+        }
+
+        .ResultContainer {
+            /* padding: 0 10px; */
+            margin: 5px;
+            display: flex;
+        }
+
+        .ResultContainer > div:nth-of-type(1) {
+            border-right: 1px dashed black;
+        }
+
+        .ResultContainer > div {
+            padding: 0 3em;
+            flex: 1;
+        }
+
+        .Item {
+            padding: 3px 0;
+            font-size: 12pt;
+            min-height: 40px;
+        }
+
+        .Item * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .ItemLabel {
+            color: lightgray;
+            font-weight: 600
+        }
+
+        .HorizontalList {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px);
+            column-gap: 50px;
+            row-gap: 10px;
+            padding: 0 100px;
+        }
+
+        .TestItem {
+            border-radius: 5px;
+            padding-left: 2px;
+        }
+
+        .HorizontalList .TestItem > div {
+            display: inline;
+            width: 100px;
+        }
+
+        .TestType{
+            padding: 2px;
+        }
+
+        .green-back {
+            background-color: green;
+        }
+
+        .grey-back {
+            background-color: lightgray;
+        }
+
+        .red-back {
+            background-color: lightcoral;
+        }
+
+        .orange-back {
+            background-color: sandybrown;
+        }
+
+        .green-back-light {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>String Template</h1>
+    
+    <div class="HorizontalList">
+    
+                        <div class="TestItem green-back-light ">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>&#9745</span>
+                            </div>
+                            <div class="TestType">
+                                Test1
+                            </div>
+                        </div>
+                        
+                        <div class="TestItem orange-back">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>!</span>
+                            </div>
+                            <div class="TestType">
+                                Test2
+                            </div>
+                        </div>
+                        
+                        <div class="TestItem grey-back">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>?</span>
+                            </div>
+                            <div class="TestType">
+                                Test3
+                            </div>
+                        </div>
+                        
+                        <div class="TestItem red-back">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>&#9746</span>
+                            </div>
+                            <div class="TestType">
+                                Test4
+                            </div>
+                        </div>
+                        
+</div><div class="HorizontalList">
+    
+                        <div class="TestItem green-back-light ">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>&#9745</span>
+                            </div>
+                            <div class="TestType">
+                                Test1
+                            </div>
+                        </div>
+                        
+                        <div class="TestItem green-back-light ">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>&#9745</span>
+                            </div>
+                            <div class="TestType">
+                                Test2
+                            </div>
+                        </div>
+                        
+                        <div class="TestItem grey-back">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>?</span>
+                            </div>
+                            <div class="TestType">
+                                Test3
+                            </div>
+                        </div>
+                        
+                        <div class="TestItem grey-back">
+                            <div class="TestResult" style="font-size: 12pt;">
+                                <!-- <span style="color: green;">&#9745</span> -->
+                                <span>?</span>
+                            </div>
+                            <div class="TestType">
+                                Test4
+                            </div>
+                        </div>
+                        
+</div>
+</body>
+</html>
